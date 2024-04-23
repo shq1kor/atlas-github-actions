@@ -1,0 +1,14 @@
+name: Reusable Workflow
+
+# trigger from other workflows
+on:
+  workflow_call:
+
+jobs: 
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: "Test: print Hello"
+        run: echo "Hello, World!"
